@@ -1,0 +1,1 @@
+📘 JavaScript practice problems and solutions based on the CodeWithHarry JavaScript course and notes. This repository contains chapter-wise exercises, practice sets, and hands-on coding examples to strengthen JavaScript fundamentals, problem-solving skills, and programming concepts.
