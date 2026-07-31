@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insertion Methods</title>
+</head>
+
+<body>
+    <h1>JavaScript Insertion Methods</h1>
+
+    <div id="box" style="border:2px solid black; padding:20px;">Original Content</div>
+
+    <script>
+        let box = document.getElementById("box");
+
+        // 1. append()
+        let appendElement = document.createElement("p");
+        appendElement.textContent = "This is added using append()";
+        box.append(appendElement);
+
+        // 2. prepend()
+        let prependElement = document.createElement("p");
+        prependElement.textContent = "This is added using prepend()";
+        box.prepend(prependElement);
+
+        // 3. before()
+        let beforeElement = document.createElement("h3");
+        beforeElement.textContent = "This is added using before()";
+        box.before(beforeElement);
+
+        // 4. after()
+        let afterElement = document.createElement("h3");
+        afterElement.textContent = "This is added using after()";
+        box.after(afterElement);
+
+        // 5. replaceWith()
+        let newBox = document.createElement("div");
+        newBox.textContent = "This div replaced the original div using replaceWith()";
+        newBox.style.border = "2px solid red";
+        newBox.style.padding = "20px";
+        box.replaceWith(newBox);
+    </script>
+</body>
+
+</html>

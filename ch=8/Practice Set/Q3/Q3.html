@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarks with Event Listeners</title>
+</head>
+
+<body>
+    <h1>My Favourite Websites</h1>
+
+    <button id="google">Google</button>
+    <button id="github">GitHub</button>
+    <button id="youtube">YouTube</button>
+    <button id="chatGPT">ChatGPT</button>
+
+    <script>
+        document.getElementById("google").addEventListener("click", function () {
+            window.open("https://www.google.com", "_blank");
+        });
+
+        document.getElementById("github").addEventListener("click", function () {
+            window.open("https://www.github.com", "_blank");
+        });
+
+        document.getElementById("youtube").addEventListener("click", function () {
+            window.open("https://www.youtube.com", "_blank");
+        });
+
+        document.getElementById("chatgpt").addEventListener("click", function () {
+            window.open("https://chat.openai.com", "_blank");
+        });
+
+    </script>
+
+
+</body>
+
+</html>

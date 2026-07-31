@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glowing Bulb</title>
+    <style>
+        #bulb {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: gray;
+            margin: 30px auto;
+            border: 2px solid black;
+        }
+
+        .glow {
+            background-color: yellow;
+            box-shadow: 0 0 20px yellow,0 0 40px yellow,0 0 60px orange;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="bulb"></div>
+    <button id="btn">Toggle Bulb</button>
+
+    <script>
+        const bulb = document.getElementById("bulb");
+        const btn = document.getElementById("btn");
+
+        btn.addEventListener("click", function () {
+            bulb.classList.toggle("glow");
+        });
+    </script>
+
+</body>
+
+</html>
+
+<!-- This demonstrate the use of classList.toggle() to add and remove a CSS class dynamically.  -->
